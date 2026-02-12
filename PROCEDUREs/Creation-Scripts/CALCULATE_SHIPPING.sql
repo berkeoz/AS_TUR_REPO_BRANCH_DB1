@@ -11,7 +11,7 @@ IS
     v_express_fee NUMBER := 0;
 BEGIN
     -- Calculate weight-based charge
-    IF p_weight > 50 THEN
+    IF p_weight > 75 THEN  -- ← CHANGED: Developer A changed from 50 to 75
         v_weight_charge := p_weight * 0.50;
     ELSIF p_weight > 20 THEN
         v_weight_charge := p_weight * 0.30;
