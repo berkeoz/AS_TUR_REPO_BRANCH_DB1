@@ -32,7 +32,7 @@ BEGIN
 
     -- Add express shipping fee
     IF p_is_express = 'Y' THEN
-        v_express_fee := 25.00;
+        v_express_fee := 35.00;  -- ← CHANGED: Developer B changed from 25.00 to 35.00
     END IF;
 
     -- Calculate total
